@@ -1,3 +1,10 @@
+Handlebars.registerPartial('namePartial', document.getElementById("partial-template").innerHTML)
+function renderMain() {
+  let template = document.getElementById("main-template").innerHTML;
+  let templateFunction = Handlebars.compile(template);
+  let html = templateFunction({name: 'Gordon Ramsay'});
+}
+
 function init() {
   let recipe = {
     description: 'yummy chicken noodle soup',
