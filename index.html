@@ -18,6 +18,12 @@
     </ul>
   </div>
 </script>
+<script id="main-template" type="text/x-handlebars-template">
+  {{> namePartial }}
+</script>
+<script id="partial-template" type="text/x-handlebars-template">
+  <div>{{ name }}</div>
+</script>
     </main>
     <script src="node_modules/handlebars/dist/handlebars.min.js"></script>
     <script src="index.js"></script>
